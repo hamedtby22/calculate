@@ -1,0 +1,66 @@
+*{
+   padding: 0%;
+   margin: 0%;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   box-sizing: border-box;
+
+}
+.display{
+   color: red;
+   text-align: right;
+   padding: 20px;
+
+}
+body{
+   background-color: black;
+   height: 100vh;
+   align-items: flex-start;
+   display: flex;
+   justify-content: center;
+
+}
+.keypad-table tr:first-child .key{
+   background-color: silver;
+}
+.keypad-table tr:first-child .key:active{
+   background-color: rgb(143, 143, 143);
+}
+.keypad-table tr .key{
+   background-color: lightslategray;
+}
+.keypad-table tr .key:active{
+   background-color: rgb(85, 84, 84);
+}
+.keypad-table tr td:last-child .key{
+   background-color: rgb(255, 102, 0);
+}
+.keypad-table tr td:last-child .key:active{
+   background-color: rgb(168, 80, 21);
+}
+.key{
+   width: 90px;
+   height: 90px;
+   border: 1px solid black;
+   border-radius: 90px;
+   text-align: center;
+   padding: 5px;
+   line-height: 90px;
+   font-size: 35px;
+}
+.zero {
+   width: 200px;
+}
+@media (max-width:520px) {
+   .key {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      line-height: 50px;
+      padding: 0%;
+   }
+   .zero {
+      width: 100px;
+   }
+
+}
